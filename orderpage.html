@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Page</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .menu-item button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .menu-item button:hover {
+            background-color: #218838;
+        }
+
+        .cart {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        .cart h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .cart-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart-items li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-total {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Structure -->
+    <div class="container">
+        <h1>Food Order Page</h1>
+        <div class="menu">
+            <!-- Food Items -->
+            <div class="menu-item">
+                <img src="<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Page</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .menu-item button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .menu-item button:hover {
+            background-color: #218838;
+        }
+
+        .cart {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+
+        .cart h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .cart-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cart-items li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-total {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Structure -->
+    <div class="container">
+        <h1>Food Order Page</h1>
+        <div class="menu">
+            <!-- Food Items -->
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/150" alt="Burger">
+                <h3>Burger</h3>
+                <p>A delicious beef burger with cheese and veggies.</p>
+                <p><strong>$5.99</strong></p>
+                <button onclick="addToCart('Burger', 5.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Classic pepperoni pizza with extra cheese.</p>
+                <p><strong>$8.99</strong></p>
+                <button onclick="addToCart('Pizza', 8.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/150" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Creamy Alfredo pasta with garlic bread.</p>
+                <p><strong>$7.99</strong></p>
+                <button onclick="addToCart('Pasta', 7.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul class="cart-items" id="cartItems">
+                <!-- Cart items will be added here dynamically -->
+            </ul>
+            <p class="cart-total">Total: $<span id="cartTotal">0.00</span></p>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        let cart = [];
+        let total = 0;
+
+        // Function to add items to the cart
+        function addToCart(itemName, itemPrice) {
+            cart.push({ name: itemName, price: itemPrice });
+            total += itemPrice;
+            updateCart();
+        }
+
+        // Function to update the cart display
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+
+            // Clear the cart display
+            cartItems.innerHTML = '';
+
+            // Add each item to the cart display
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                cartItems.appendChild(li);
+            });
+
+            // Update the total price
+            cartTotal.textContent = total.toFixed(2);
+        }
+
+        // Function to handle checkout
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty. Please add some items.');
+            } else {
+                alert(`Thank you for your order! Total: $${total.toFixed(2)}`);
+                cart = [];
+                total = 0;
+                updateCart();
+            }
+        }
+    </script>
+</body>
+</html>" alt="Burger">
+                <h3>Burger</h3>
+                <p>A delicious beef burger with cheese and veggies.</p>
+                <p><strong>$5.99</strong></p>
+                <button onclick="addToCart('Burger', 5.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/150" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Classic pepperoni pizza with extra cheese.</p>
+                <p><strong>$8.99</strong></p>
+                <button onclick="addToCart('Pizza', 8.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/150" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>Creamy Alfredo pasta with garlic bread.</p>
+                <p><strong>$7.99</strong></p>
+                <button onclick="addToCart('Pasta', 7.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul class="cart-items" id="cartItems">
+                <!-- Cart items will be added here dynamically -->
+            </ul>
+            <p class="cart-total">Total: $<span id="cartTotal">0.00</span></p>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        let cart = [];
+        let total = 0;
+
+        // Function to add items to the cart
+        function addToCart(itemName, itemPrice) {
+            cart.push({ name: itemName, price: itemPrice });
+            total += itemPrice;
+            updateCart();
+        }
+
+        // Function to update the cart display
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+
+            // Clear the cart display
+            cartItems.innerHTML = '';
+
+            // Add each item to the cart display
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                cartItems.appendChild(li);
+            });
+
+            // Update the total price
+            cartTotal.textContent = total.toFixed(2);
+        }
+
+        // Function to handle checkout
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty. Please add some items.');
+            } else {
+                alert(`Thank you for your order! Total: $${total.toFixed(2)}`);
+                cart = [];
+                total = 0;
+                updateCart();
+            }
+        }
+    </script>
+</body>
+</html>
