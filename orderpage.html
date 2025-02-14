@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Order Page</title>
+    <title>MDGMTRADERS</title>
     <style>
         /* CSS Styles */
         body {
@@ -104,134 +104,36 @@
             font-size: 18px;
         }
 
-        .checkout-btn {
-            width: 100%;
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            padding: 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-            font-size: 16px;
-        }
-
-        .checkout-btn:hover {
-            background-color: #218838;
-        }
-    </style>
-</head>
-<body>
-    <!-- HTML Structure -->
-    <div class="container">
-        <h1>Food Order Page</h1>
-        <div class="menu">
-            <!-- Food Items -->
-            <div class="menu-item">
-                <img src="<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Order Page</title>
-    <style>
-        /* CSS Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        .menu {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .payment-method {
             margin-top: 20px;
         }
 
-        .menu-item {
-            flex: 1 1 calc(33.333% - 20px);
-            background-color: #f4f4f4;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .menu-item img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-
-        .menu-item h3 {
-            margin: 10px 0;
-            font-size: 18px;
-            color: #333;
-        }
-
-        .menu-item p {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .menu-item button {
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .menu-item button:hover {
-            background-color: #218838;
-        }
-
-        .cart {
-            margin-top: 30px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
-        }
-
-        .cart h2 {
+        .payment-method h2 {
             margin-bottom: 15px;
             color: #333;
         }
 
-        .cart-items {
-            list-style: none;
-            padding: 0;
-        }
-
-        .cart-items li {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .cart-total {
+        .payment-method label {
+            display: block;
+            margin: 10px 0 5px;
             font-weight: bold;
-            text-align: right;
-            margin-top: 10px;
-            font-size: 18px;
+        }
+
+        .payment-method input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .payment-details {
+            margin-top: 15px;
+            display: none;
+        }
+
+        .payment-details input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
 
         .checkout-btn {
@@ -249,35 +151,28 @@
         .checkout-btn:hover {
             background-color: #218838;
         }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <!-- HTML Structure -->
     <div class="container">
-        <h1>Food Order Page</h1>
+        <h1>MDGMTRADERS</h1>
         <div class="menu">
-            <!-- Food Items -->
+            <!-- Items -->
             <div class="menu-item">
-                <img src="https://via.placeholder.com/150" alt="Burger">
-                <h3>Burger</h3>
-                <p>A delicious beef burger with cheese and veggies.</p>
-                <p><strong>$5.99</strong></p>
-                <button onclick="addToCart('Burger', 5.99)">Add to Cart</button>
+                <img src="https://sugarspunrun.com/wp-content/uploads/2021/01/HOW-TO-MAKE-BROWN-SUGAR-RECIPE-1-of-1-500x500.jpg" alt="Brown Sugar">
+                <h3>Brown sugar</h3>
+                <p>100% ORGANIC NATURALLY GROW.</p>
+                <p><strong>$2.30</strong></p>
+                <button onclick="addToCart('Brown sugar', 2.30)">Add to Cart</button>
             </div>
-            <div class="menu-item">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/classic-cheese-pizza-recipe-2-64429a0cb408b.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*" alt="Pizza">
-                <h3>Pizza</h3>
-                <p>Classic pepperoni pizza with extra cheese.</p>
-                <p><strong>$8.99</strong></p>
-                <button onclick="addToCart('Pizza', 8.99)">Add to Cart</button>
-            </div>
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/150" alt="Pasta">
-                <h3>Pasta</h3>
-                <p>Creamy Alfredo pasta with garlic bread.</p>
-                <p><strong>$7.99</strong></p>
-                <button onclick="addToCart('Pasta', 7.99)">Add to Cart</button>
-            </div>
+          
         </div>
 
         <!-- Cart Section -->
@@ -287,7 +182,46 @@
                 <!-- Cart items will be added here dynamically -->
             </ul>
             <p class="cart-total">Total: $<span id="cartTotal">0.00</span></p>
-            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+
+        <!-- Payment Method Section -->
+        <div class="payment-method">
+            <h2>Payment Method</h2>
+            <label>
+                <input type="radio" name="payment" value="creditCard" onclick="showPaymentDetails('creditCard')"> Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="paypal" onclick="showPaymentDetails('paypal')"> PayPal
+            </label>
+            <label>
+                <input type="radio" name="payment" value="cod" onclick="showPaymentDetails('cod')"> Cash on Delivery
+            </label>
+
+            <!-- Credit Card Details -->
+            <div id="creditCardDetails" class="payment-details">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="text" id="expiryDate" placeholder="MM/YY">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123">
+            </div>
+
+            <!-- PayPal Details -->
+            <div id="paypalDetails" class="payment-details">
+                <p>You will be redirected to PayPal to complete your payment.</p>
+            </div>
+
+            <!-- Cash on Delivery Details -->
+            <div id="codDetails" class="payment-details">
+                <p>Pay with cash when your order is delivered.</p>
+            </div>
+
+            <!-- Error Message -->
+            <p id="paymentError" class="error-message"></p>
+
+            <!-- Checkout Button -->
+            <button class="checkout-btn" onclick="checkout()">Place Order</button>
         </div>
     </div>
 
@@ -322,93 +256,53 @@
             cartTotal.textContent = total.toFixed(2);
         }
 
-        // Function to handle checkout
-        function checkout() {
-            if (cart.length === 0) {
-                alert('Your cart is empty. Please add some items.');
-            } else {
-                alert(`Thank you for your order! Total: $${total.toFixed(2)}`);
-                cart = [];
-                total = 0;
-                updateCart();
+        // Function to show payment details based on selection
+        function showPaymentDetails(method) {
+            document.getElementById('creditCardDetails').style.display = 'none';
+            document.getElementById('paypalDetails').style.display = 'none';
+            document.getElementById('codDetails').style.display = 'none';
+
+            if (method === 'creditCard') {
+                document.getElementById('creditCardDetails').style.display = 'block';
+            } else if (method === 'paypal') {
+                document.getElementById('paypalDetails').style.display = 'block';
+            } else if (method === 'cod') {
+                document.getElementById('codDetails').style.display = 'block';
             }
         }
-    </script>
-</body>
-</html>" alt="Burger">
-                <h3>Burger</h3>
-                <p>A delicious beef burger with cheese and veggies.</p>
-                <p><strong>$5.99</strong></p>
-                <button onclick="addToCart('Burger', 5.99)">Add to Cart</button>
-            </div>
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/150" alt="Pizza">
-                <h3>Pizza</h3>
-                <p>Classic pepperoni pizza with extra cheese.</p>
-                <p><strong>$8.99</strong></p>
-                <button onclick="addToCart('Pizza', 8.99)">Add to Cart</button>
-            </div>
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/150" alt="Pasta">
-                <h3>Pasta</h3>
-                <p>Creamy Alfredo pasta with garlic bread.</p>
-                <p><strong>$7.99</strong></p>
-                <button onclick="addToCart('Pasta', 7.99)">Add to Cart</button>
-            </div>
-        </div>
 
-        <!-- Cart Section -->
-        <div class="cart">
-            <h2>Your Cart</h2>
-            <ul class="cart-items" id="cartItems">
-                <!-- Cart items will be added here dynamically -->
-            </ul>
-            <p class="cart-total">Total: $<span id="cartTotal">0.00</span></p>
-            <button class="checkout-btn" onclick="checkout()">Checkout</button>
-        </div>
-    </div>
+        // Function to handle checkout
+        function checkout() {
+            const paymentError = document.getElementById('paymentError');
+            paymentError.textContent = '';
 
-    <!-- JavaScript -->
-    <script>
-        let cart = [];
-        let total = 0;
+            if (cart.length === 0) {
+                paymentError.textContent = 'Your cart is empty. Please add some items.';
+                return;
+            }
 
-        // Function to add items to the cart
-        function addToCart(itemName, itemPrice) {
-            cart.push({ name: itemName, price: itemPrice });
-            total += itemPrice;
+            const selectedPayment = document.querySelector('input[name="payment"]:checked');
+
+            if (!selectedPayment) {
+                paymentError.textContent = 'Please select a payment method.';
+                return;
+            }
+
+            if (selectedPayment.value === 'creditCard') {
+                const cardNumber = document.getElementById('cardNumber').value;
+                const expiryDate = document.getElementById('expiryDate').value;
+                const cvv = document.getElementById('cvv').value;
+
+                if (!cardNumber || !expiryDate || !cvv) {
+                    paymentError.textContent = 'Please fill in all credit card details.';
+                    return;
+                }
+            }
+
+            alert(`Thank you for your order! Total: $${total.toFixed(2)}`);
+            cart = [];
+            total = 0;
             updateCart();
-        }
-
-        // Function to update the cart display
-        function updateCart() {
-            const cartItems = document.getElementById('cartItems');
-            const cartTotal = document.getElementById('cartTotal');
-
-            // Clear the cart display
-            cartItems.innerHTML = '';
-
-            // Add each item to the cart display
-            cart.forEach(item => {
-                const li = document.createElement('li');
-                li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-                cartItems.appendChild(li);
-            });
-
-            // Update the total price
-            cartTotal.textContent = total.toFixed(2);
-        }
-
-        // Function to handle checkout
-        function checkout() {
-            if (cart.length === 0) {
-                alert('Your cart is empty. Please add some items.');
-            } else {
-                alert(`Thank you for your order! Total: $${total.toFixed(2)}`);
-                cart = [];
-                total = 0;
-                updateCart();
-            }
         }
     </script>
 </body>
